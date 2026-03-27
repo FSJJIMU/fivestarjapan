@@ -19,9 +19,9 @@ const SITE_CONTENTS = {
     tel: '090-5068-0298',
     email: 'five-starjapan_jimu@ymail.ne.jp',
     address: '〒607-8426 京都府京都市山科区御陵下御廟野町１６番地',
-    logoImg: '画像データ/FSJ-logo2-透過.png',             // ← ロゴ画像
-    heroBg:  '画像データ/背景画像.jpg',                   // ← ヒーロー背景画像
-    qrImg:   '画像データ/仮QRコード2.png',                // ← QRコード画像（仮）
+    logoImg: 'images/FSJ-logo2-透過.png',             // ← ロゴ画像
+    heroBg:  'images/背景画像.jpg',                   // ← ヒーロー背景画像
+    qrImg:   'images/仮QRコード2.png',                // ← QRコード画像（仮）
   },
 
   // ── ナビゲーション ────────────────────────────────
@@ -41,42 +41,42 @@ const SITE_CONTENTS = {
     {
       title: 'バッテリージャンプアップ',
       desc: '専用テスターでバッテリー残量・電圧・CCA・抵抗を計測し、状態をお客様と一緒に確認。12V/24V対応モバイル式エンジンスターター常備で、ケーブルが届かない場所も安心。普通車・外車・10tトラック・重機・農耕機まで幅広く対応。',
-      img: '画像データ/sagyo2.jpg',
+      img: 'images/sagyo2.jpg',
     },
     {
       title: 'バッテリー交換',
       desc: '現地の専用テスター検査で「要交換」の数値・繰り返す上がり・4年以上経過・オルタネーター不具合など、状況に応じて適切にご提案。ほとんどの型式に現地即対応いたします。',
-      img: '画像データ/sagyo1.jpg',
+      img: 'images/sagyo1.jpg',
     },
     {
       title: '乗上・脱輪・スタック救出',
       desc: '何等かの理由で縁石に乗り上げたり、側溝に脱輪、もしくはぬかるみにはまり込んだり田畑に入り込んでしまい立往生した際是非ご連絡ください！現地担当のプロがウィンチはもちろん多種多様な道具を用いてレスキューにあたります！！',
-      img: '画像データ/stack.jpg',
+      img: 'images/stack.jpg',
     },
     {
       title: 'ガス欠対応',
       desc: 'レギュラーガソリンはもちろん、軽油も携行しておりますので、ガス欠の場合も迅速に対応させていただきます！',
-      img: '画像データ/gasketsu.jpg',
+      img: 'images/gasketsu.jpg',
     },
     {
       title: 'パンク修理・タイヤ交換',
       desc: '路面接地面における釘などを踏んだことによるパンク修理を現地にて迅速に施工いたします！但し、側面の裂傷や、ワイヤーが飛び出てしまった場合は修復不可ですので、スペアタイヤによる交換も現地にて安全かつ迅速に対応いたします！\n※一部車種条件によっては積載車で搬送対応や、対応スペアタイヤ準備にお時間いただく場合があります。',
-      img: '画像データ/タイヤ パンク.jpg',
+      img: 'images/タイヤ パンク.jpg',
     },
     {
       title: 'バイク積載・搬送',
       desc: 'バイクのトラブルにも迅速対応。専用の積載機材で安全に搬送いたします。',
-      img: '画像データ/バイク積載.jpg',
+      img: 'images/バイク積載.jpg',
     },
     {
       title: '積載車・レッカー搬送',
       desc: '最終的に積載車が必要な場合もお任せください。また、現地担当隊員がお客様とご相談させていただいた結果積載車搬送が必要な場合は、現地から積載車担当に連絡し積載車の手配もさせていただきます。\n※九州は現在積載車の対応は不可となっておりますが、今後配備していきます。',
-      img: '画像データ/sekisai.jpg',
+      img: 'images/sekisai.jpg',
     },
     {
       title: '事故車・不動車対応',
       desc: '事故や故障で動けなくなったお車を安全に回収・搬送。現場状況に応じた最適な手段でお客様をサポートします。',
-      img: '画像データ/jiko.jpg',
+      img: 'images/jiko.jpg',
     },
   ],
 
@@ -88,22 +88,22 @@ const SITE_CONTENTS = {
     {
       title: 'スズメバチ駆除',
       desc: '重篤なアナフィラキシーショックを引き起こす最も危険なスズメバチ。巣の撤去から繁忙期の兵隊バチ対応、戻りバチ防止のハチトラップ設置まで確実に対応します。',
-      img: '画像データ/suzume.jpg',
+      img: 'images/suzume.jpg',
     },
     {
       title: 'アシナガバチ駆除',
       desc: '軒先・庭木・玄関まわりに多く巣を作るアシナガバチを迅速駆除。外出中の個体による戻りバチ対策も含め、再発を防ぎます。',
-      img: '画像データ/ashinaga.jpg',
+      img: 'images/ashinaga.jpg',
     },
     {
       title: 'ミツバチ駆除・撤去',
       desc: '壁の中・天井裏・床下に入り込んだミツバチの巣ごと対応。蜂蜜による雨漏りやシミなどの二次被害も防ぎながら丁寧に撤去します。',
-      img: '画像データ/mitsu.jpg',
+      img: 'images/mitsu.jpg',
     },
     {
       title: 'その他の蜂・害虫',
       desc: '上記以外の蜂や関連する害虫トラブルも、なんでもお気軽にご相談ください。',
-      img: '画像データ/sonota.jpg',
+      img: 'images/sonota.jpg',
     },
   ],
 
@@ -123,12 +123,12 @@ const SITE_CONTENTS = {
       {
         name: 'ハチバキューム',
         desc: 'スプレー散布による駆除の代わりに背中にバックパックを用いた<strong>カートリッジバキューム方式</strong>、その名も<strong>ハチバキューム</strong>を用いてのハチの駆除を行います。\n<strong>蜂の駆除</strong>の段階においてスプレー飛散の懸念を解消いたします！！',
-        img: '画像データ/hachivacuum.jpg',
+        img: 'images/hachivacuum.jpg',
       },
       {
         name: 'ハチブロック',
         desc: '弊社独自開発の蜂ブロック工法。詳細は担当者までお問い合わせください。',
-        img: '画像データ/hachiblock.png',
+        img: 'images/hachiblock.png',
       },
     ],
   },
@@ -136,16 +136,16 @@ const SITE_CONTENTS = {
   // ── 施工実績（Rescue Updates） ────────────────────
   updates: {
     car: [
-      { title: '山道での事故',          before: '画像データ/sando1.jpg',    after: '画像データ/sando2.jpg',   desc: '道幅の狭い山道で衝突事故が発生。自走不能となった車両を速やかに積載車で搬送。二次被害を防ぎつつ、安全に搬送を完了しました。' },
-      { title: 'トラックの脱輪',        before: '画像データ/trackdatsurin1.jpg',  after: '画像データ/trackdatsurin2.jpg',  desc: '側溝への落輪による身動き不能状態からの救出。特殊資材を用いた高度な引き揚げ技術により、車両を傷つけることなく復帰させました。' },
-      { title: '横転事故',              before: '画像データ/outen1.jpg',    after: '画像データ/outen2.jpg',   desc: 'カーブで横転した車両。車体へのダメージを最小限に抑えながら、速やかに積載車へ収容し現場を復旧いたしました。' },
-      { title: '復旧不可能なパンク',    before: '画像データ/punk1.jpg',     after: '画像データ/punk2.jpg',    desc: '現場修理不能なタイヤトラブルによる搬送対応。スペアタイヤ未搭載車や重度の損傷でも、積載搬送により目的地まで確実にお届けします。' },
+      { title: '山道での事故',          before: 'images/sando1.jpg',    after: 'images/sando2.jpg',   desc: '道幅の狭い山道で衝突事故が発生。自走不能となった車両を速やかに積載車で搬送。二次被害を防ぎつつ、安全に搬送を完了しました。' },
+      { title: 'トラックの脱輪',        before: 'images/trackdatsurin1.jpg',  after: 'images/trackdatsurin2.jpg',  desc: '側溝への落輪による身動き不能状態からの救出。特殊資材を用いた高度な引き揚げ技術により、車両を傷つけることなく復帰させました。' },
+      { title: '横転事故',              before: 'images/outen1.jpg',    after: 'images/outen2.jpg',   desc: 'カーブで横転した車両。車体へのダメージを最小限に抑えながら、速やかに積載車へ収容し現場を復旧いたしました。' },
+      { title: '復旧不可能なパンク',    before: 'images/punk1.jpg',     after: 'images/punk2.jpg',    desc: '現場修理不能なタイヤトラブルによる搬送対応。スペアタイヤ未搭載車や重度の損傷でも、積載搬送により目的地まで確実にお届けします。' },
     ],
     bee: [
-      { title: '軒下の蜂の巣',          before: '画像データ/nokishita1.jpg',  after: '画像データ/nokishita2.jpg',  desc: '住宅外壁に作られた巣の迅速な撤去。周囲の安全を最優先に確保し、徹底した駆除と再発防止処置により、安心な住環境を取り戻しました。' },
-      { title: '大規模な蜂の巣',        before: '画像データ/daikibo1.jpg',    after: '画像データ/daikibo2.jpg',    desc: '特殊車両を用いた高所の巨大巣駆除。難易度の高い現場でも、専用装備と専門技術でリスクを最小限に抑え、確実な解決を実現します。' },
-      { title: '屋根裏の蜂の巣',        before: '画像データ/yaneura1.jpg',    after: '画像データ/yaneura2.jpg',    desc: '屋内・閉鎖空間における大規模な巣の撤去。周囲への被害を最小限に抑えつつ、専門技術で根こそぎ駆除し、生活空間の安全を迅速に確保しました。' },
-      { title: '庭木の蜂の巣',          before: '画像データ/niwa1.jpg',       after: '画像データ/niwa2.jpg',       desc: '植栽の中に隠れた危険な巣の特定と駆除。二次被害を防ぐための確実な捕獲技術により、庭先での安心な暮らしをサポートします。' },
+      { title: '軒下の蜂の巣',          before: 'images/nokishita1.jpg',  after: 'images/nokishita2.jpg',  desc: '住宅外壁に作られた巣の迅速な撤去。周囲の安全を最優先に確保し、徹底した駆除と再発防止処置により、安心な住環境を取り戻しました。' },
+      { title: '大規模な蜂の巣',        before: 'images/daikibo1.jpg',    after: 'images/daikibo2.jpg',    desc: '特殊車両を用いた高所の巨大巣駆除。難易度の高い現場でも、専用装備と専門技術でリスクを最小限に抑え、確実な解決を実現します。' },
+      { title: '屋根裏の蜂の巣',        before: 'images/yaneura1.jpg',    after: 'images/yaneura2.jpg',    desc: '屋内・閉鎖空間における大規模な巣の撤去。周囲への被害を最小限に抑えつつ、専門技術で根こそぎ駆除し、生活空間の安全を迅速に確保しました。' },
+      { title: '庭木の蜂の巣',          before: 'images/niwa1.jpg',       after: 'images/niwa2.jpg',       desc: '植栽の中に隠れた危険な巣の特定と駆除。二次被害を防ぐための確実な捕獲技術により、庭先での安心な暮らしをサポートします。' },
     ],
   },
 
@@ -213,17 +213,17 @@ FIVE-STAR JAPAN株式会社
 
   // ── パートナーロゴ ────────────────────────────────
   // combinedLogo を設定すると一枚画像をまとめて表示（Mobile は別画像）
-  partnersCombinedLogo:       '画像データ/ロゴまとめ1.png',
-  partnersCombinedLogoMobile: '画像データ/ロゴまとめ2.png',
+  partnersCombinedLogo:       'images/ロゴまとめ1.png',
+  partnersCombinedLogoMobile: 'images/ロゴまとめ2.png',
   partners: [
-    { name: 'パートナー企業1', logo: '画像データ/ロゴ/output/170504_car-emblem-01.jpg' },
-    { name: 'パートナー企業2', logo: '画像データ/ロゴ/output/170504_car-emblem-02.jpg' },
-    { name: 'パートナー企業3', logo: '画像データ/ロゴ/output/170504_car-emblem-07.jpg' },
-    { name: 'パートナー企業4', logo: '画像データ/ロゴ/output/170504_car-emblem-09.jpg' },
-    { name: 'パートナー企業5', logo: '画像データ/ロゴ/output/170504_car-emblem-10.jpg' },
-    { name: 'パートナー企業6', logo: '画像データ/ロゴ/output/170504_car-emblem-11.jpg' },
-    { name: 'パートナー企業7', logo: '画像データ/ロゴ/output/170504_car-emblem-12.jpg' },
-    { name: 'パートナー企業8', logo: '画像データ/ロゴ/output/eight8logo.jpg'            },
+    { name: 'パートナー企業1', logo: 'images/ロゴ/output/170504_car-emblem-01.jpg' },
+    { name: 'パートナー企業2', logo: 'images/ロゴ/output/170504_car-emblem-02.jpg' },
+    { name: 'パートナー企業3', logo: 'images/ロゴ/output/170504_car-emblem-07.jpg' },
+    { name: 'パートナー企業4', logo: 'images/ロゴ/output/170504_car-emblem-09.jpg' },
+    { name: 'パートナー企業5', logo: 'images/ロゴ/output/170504_car-emblem-10.jpg' },
+    { name: 'パートナー企業6', logo: 'images/ロゴ/output/170504_car-emblem-11.jpg' },
+    { name: 'パートナー企業7', logo: 'images/ロゴ/output/170504_car-emblem-12.jpg' },
+    { name: 'パートナー企業8', logo: 'images/ロゴ/output/eight8logo.jpg'            },
   ],
 
   // ── フッター ──────────────────────────────────────

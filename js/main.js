@@ -215,8 +215,8 @@ function buildPartnerRegions(containerId, regions) {
   if (!el || !regions) return;
   regions.forEach((r, i) => {
     const icons = r.services.map(s => {
-      if (s === 'car') return `<img src="画像データ/iconcar.png" alt="ロードサービス" class="region-icon-img">`;
-      if (s === 'bee') return `<img src="画像データ/iconbee.png" alt="蜂駆除" class="region-icon-img">`;
+      if (s === 'car') return `<img src="images/iconcar.png" alt="ロードサービス" class="region-icon-img">`;
+      if (s === 'bee') return `<img src="images/iconbee.png" alt="蜂駆除" class="region-icon-img">`;
       return '';
     }).join('');
     const companies = r.companies.map(c => `<li>${c}</li>`).join('');
