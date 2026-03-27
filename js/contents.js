@@ -56,7 +56,7 @@ const SITE_CONTENTS = {
     {
       title: 'ガス欠対応',
       desc: 'レギュラーガソリンはもちろん、軽油も携行しておりますので、ガス欠の場合も迅速に対応させていただきます！',
-      img: '画像データ/gasketsu.png',
+      img: '画像データ/gasketsu.jpg',
     },
     {
       title: 'パンク修理・タイヤ交換',
