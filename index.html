@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FIVE-STAR JAPAN GROUP — ロードサービス・蜂駆除。北部九州・山口・関西・東海エリア対応。365日24時間対応。">
+  <title>FIVE-STAR JAPAN GROUP</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css?v=99">
+
+  <!-- Contents (編集ファイル) -->
+  <script src="js/contents.js?v=27"></script>
+</head>
+<body>
+
+  <!-- ════════════════════════════════
+       NAVIGATION
+  ════════════════════════════════ -->
+  <nav id="nav">
+    <div class="nav-logo" id="nav-logo"></div>
+
+    <ul class="nav-links" id="nav-links"></ul>
+
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <div id="nav-drawer" class="nav-drawer">
+    <ul id="drawer-links"></ul>
+  </div>
+
+
+  <!-- ════════════════════════════════
+       HERO
+  ════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-bg-img"></div>
+    <div class="hero-bg"></div>
+
+    <!-- Particles -->
+    <div class="hero-particles" id="hero-particles"></div>
+
+    <!-- Main content -->
+    <div class="hero-content">
+      <!-- ① ロゴ（最初にふわっと浮かび上がる）+ テキスト重ね表示 -->
+      <div class="hero-logo-wrap">
+        <div class="hero-emblem"></div>
+        <!-- ② タイトル：ロゴの上に重なって浮き上がる -->
+        <h1 class="hero-title" id="hero-title"></h1>
+        <!-- ③ タグライン：タイトルの下に浮き上がる -->
+        <p class="hero-tagline" id="hero-tagline"></p>
+      </div>
+
+      <!-- QRコード -->
+      <div class="hero-qr-wrap" id="hero-qr-wrap"></div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero-scroll">
+      <span>SCROLL</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════
+       SERVICE LIST
+  ════════════════════════════════ -->
+  <section id="services" class="section section-light">
+    <div class="section-header">
+      <span class="section-label reveal">Service List</span>
+      <h2 class="section-title reveal">サービス一覧</h2>
+    </div>
+
+    <!-- カーサービス -->
+    <div class="services-cat">
+      <div class="cat-tag reveal">ロードサービス</div>
+
+      <!-- 対応車種 Dプラン -->
+      <div class="vt-d-wrap reveal">
+        <div class="vt-d-header">
+          <div class="vt-d-header-line"></div>
+          <div class="vt-d-header-text">
+            <h3 class="vt-d-title">対応車種</h3>
+          </div>
+          <div class="vt-d-header-line"></div>
+        </div>
+        <div class="vt-d-panels">
+          <div class="vt-d-panel">
+            <i data-lucide="car" class="vt-d-ico"></i>
+            <span class="vt-d-name">普通自動車</span>
+            <span class="vt-d-sub">軽〜普通車</span>
+          </div>
+          <div class="vt-d-panel">
+            <i data-lucide="car" class="vt-d-ico"></i>
+            <span class="vt-d-name">外車・輸入車</span>
+            <span class="vt-d-sub">並行輸入車も対応</span>
+          </div>
+          <div class="vt-d-panel">
+            <i data-lucide="truck" class="vt-d-ico"></i>
+            <span class="vt-d-name">トラック全般</span>
+            <span class="vt-d-sub">10t以上対応</span>
+          </div>
+          <div class="vt-d-panel vt-d-panel--gold">
+            <i data-lucide="zap" class="vt-d-ico"></i>
+            <span class="vt-d-name">24V対応</span>
+            <span class="vt-d-sub">大型・重車両</span>
+            <span class="vt-d-glow"></span>
+          </div>
+          <div class="vt-d-panel">
+            <i data-lucide="ship" class="vt-d-ico"></i>
+            <span class="vt-d-name">船舶</span>
+            <span class="vt-d-sub">マリン全般</span>
+          </div>
+          <div class="vt-d-panel">
+            <i data-lucide="wrench" class="vt-d-ico"></i>
+            <span class="vt-d-name">重機</span>
+            <span class="vt-d-sub">建設・土木機械</span>
+          </div>
+          <div class="vt-d-panel vt-d-panel--sp-hide">
+            <i data-lucide="tractor" class="vt-d-ico"></i>
+            <span class="vt-d-name">農耕機</span>
+            <span class="vt-d-sub">田畑・圃場対応</span>
+          </div>
+        </div>
+        <p class="vt-d-note">上記以外の車種もお気軽にご相談ください</p>
+      </div>
+
+      <p class="services-cat-desc reveal" id="car-services-desc"></p>
+
+      <div class="service-grid" id="car-services-grid"></div>
+    </div>
+
+    <!-- 蜂駆除 -->
+    <div class="services-cat">
+      <div class="cat-tag reveal">ハチ駆除</div>
+
+      <!-- オーガニック蜂駆除 -->
+      <div id="bee-organic"></div>
+
+      <p class="services-cat-desc reveal" id="bee-services-desc"></p>
+      <div class="service-grid" id="bee-services-grid"></div>
+    </div>
+
+    <p class="services-disclaimer reveal">※各代理店にご相談ください。場合によっては対応できない内容・エリアがございます。</p>
+  </section>
+
+
+  <!-- ════════════════════════════════
+       RESCUE UPDATES (施工実績)
+  ════════════════════════════════ -->
+  <section id="updates" class="section">
+    <div class="section-header">
+      <span class="section-label reveal">Rescue Updates</span>
+      <h2 class="section-title reveal">レスキューアップデート</h2>
+      <p class="section-desc reveal">実際の現場での対応事例をご紹介します。</p>
+    </div>
+
+    <div id="updates-car" class="updates-cat"></div>
+    <div id="updates-bee" class="updates-cat" style="margin-top:56px;"></div>
+  </section>
+
+
+  <!-- ════════════════════════════════
+       ABOUT US
+  ════════════════════════════════ -->
+  <section id="about" class="section">
+    <div class="section-header">
+      <span class="section-label reveal">About Us</span>
+      <h2 class="section-title reveal">代表挨拶</h2>
+    </div>
+
+    <div class="about-inner">
+      <div class="about-logo-wrap reveal">
+        <div class="about-logo" id="about-logo">★</div>
+      </div>
+      <div class="about-text reveal reveal-delay-2">
+        <p id="about-body"></p>
+        <p class="about-signature" id="about-signature"></p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════
+       COMPANY INFO
+  ════════════════════════════════ -->
+  <section id="company" class="section">
+    <div class="section-header">
+      <span class="section-label reveal">Company</span>
+      <h2 class="section-title reveal">会社概要</h2>
+    </div>
+
+    <div class="company-table" id="company-table"></div>
+  </section>
+
+
+  <!-- ════════════════════════════════
+       OUR PARTNERS
+  ════════════════════════════════ -->
+  <section id="partners" class="section">
+    <div class="section-header">
+      <span class="section-label reveal">Our Partners</span>
+      <h2 class="section-title reveal">協力店紹介</h2>
+      <p class="section-desc reveal">信頼できるパートナー企業と連携し、<br class="sp-br">より広範なサービスをご提供しています。</p>
+    </div>
+
+    <div class="partner-regions-grid" id="partners-regions"></div>
+
+    <div class="partners-grid" id="partners-grid"></div>
+  </section>
+
+
+  <!-- ════════════════════════════════
+       CONTACT
+  ════════════════════════════════ -->
+  <section id="contact" class="section">
+    <div class="section-header">
+      <span class="section-label reveal">Contact</span>
+      <h2 class="section-title reveal">お問い合わせ</h2>
+      <p class="section-desc reveal">24時間・365日対応。<br class="sp-br">お気軽にご連絡ください。</p>
+    </div>
+
+    <div class="contact-inner">
+
+      <!-- 電話 -->
+      <div class="contact-tel reveal">
+        <div class="contact-tel-label"><i data-lucide="phone" style="width:15px;height:15px;vertical-align:middle;margin-right:6px;"></i>お電話でのお問い合わせ</div>
+        <a class="contact-tel-number js-tel" href="tel:"></a>
+        <div class="contact-tel-sub">24時間・365日受付 ／ 通話料無料</div>
+      </div>
+
+      <div class="contact-divider reveal">または WEBフォームから</div>
+
+      <!-- Form -->
+      <form
+        id="contact-form"
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+      >
+        <!-- Netlify bot対策 -->
+        <input type="hidden" name="form-name" value="contact">
+        <p style="display:none;"><label>Don't fill: <input name="bot-field"></label></p>
+
+        <div class="form-group reveal">
+          <label class="form-label" for="name">
+            お名前 <span class="required">必須</span>
+          </label>
+          <input class="form-input" id="name" name="name" type="text"
+            placeholder="例：田中 太郎" required>
+        </div>
+
+        <div class="form-group reveal reveal-delay-1">
+          <label class="form-label" for="tel">
+            電話番号 <span class="required">必須</span>
+          </label>
+          <input class="form-input" id="tel" name="tel" type="tel"
+            placeholder="例：090-0000-0000" required>
+        </div>
+
+        <div class="form-group reveal reveal-delay-2">
+          <label class="form-label" for="email">メールアドレス</label>
+          <input class="form-input" id="email" name="email" type="email"
+            placeholder="例：example@email.com">
+        </div>
+
+        <div class="form-group reveal reveal-delay-3">
+          <label class="form-label" for="service">
+            お問い合わせ種別 <span class="required">必須</span>
+          </label>
+          <select class="form-select" id="service" name="service" required>
+            <option value="" disabled selected>選択してください</option>
+            <option value="road">ロードサービス（出張・バッテリー・牽引など）</option>
+            <option value="bee">蜂駆除</option>
+            <option value="other">その他・お見積り</option>
+          </select>
+        </div>
+
+        <div class="form-group reveal">
+          <label class="form-label" for="message">お問い合わせ内容</label>
+          <textarea class="form-textarea" id="message" name="message"
+            placeholder="トラブルの状況・ご要望などをご記入ください"></textarea>
+        </div>
+
+        <button class="form-submit btn reveal" type="submit">
+          送信する
+        </button>
+
+        <p class="form-note reveal">
+          ご入力いただいた情報はお問い合わせへの回答のみに使用します。<br>
+          個人情報の取り扱いについては<a href="#" style="color:var(--gold-dim)">プライバシーポリシー</a>をご確認ください。
+        </p>
+      </form>
+
+      <!-- 送信完了メッセージ -->
+      <div id="form-success" class="form-success">
+        <h3>✅ 送信が完了しました</h3>
+        <p>お問い合わせありがとうございます。<br>内容を確認のうえ、担当者よりご連絡いたします。<br>しばらくお待ちください。</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════
+       FOOTER
+  ════════════════════════════════ -->
+  <footer>
+    <div class="footer-logo" id="footer-logo"></div>
+    <ul class="footer-links" id="footer-links"></ul>
+    <p class="footer-copy" id="footer-copy"></p>
+  </footer>
+
+
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Main JS -->
+  <script src="js/main.js?v=19"></script>
+
+</body>
+</html>
