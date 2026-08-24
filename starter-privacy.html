@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="業務用アプリ「STARTER」のプライバシーポリシー（個人情報の取扱いについて） | FIVE-STAR JAPAN株式会社">
+  <title>STARTER プライバシーポリシー | FIVE-STAR JAPAN GROUP</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --dark:       #08101e;
+      --navy:       #0e1d31;
+      --navy-mid:   #1a3050;
+      --gold:       #c8a235;
+      --gold-light: #e8cf82;
+      --gold-dim:   #8a6e22;
+      --white:      #f5f3ee;
+      --gray:       #9aacbe;
+      --gray-light: #d8e2ed;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--navy);
+      color: var(--gray-light);
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 300;
+      line-height: 1.9;
+      -webkit-font-smoothing: antialiased;
+    }
+    .pp-header {
+      background: var(--dark);
+      padding: 22px 24px;
+      border-bottom: 1px solid rgba(200, 162, 53, 0.25);
+    }
+    .pp-header a {
+      font-family: 'Cinzel', serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+      letter-spacing: 0.12em;
+      color: var(--gold);
+      text-decoration: none;
+    }
+    .pp-container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 64px 24px 80px;
+    }
+    h1 {
+      font-family: 'Noto Serif JP', serif;
+      font-weight: 600;
+      font-size: 1.9rem;
+      color: var(--white);
+      letter-spacing: 0.08em;
+      margin-bottom: 8px;
+    }
+    .pp-sub {
+      color: var(--gray);
+      font-size: 0.85rem;
+      margin-bottom: 48px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid rgba(200, 162, 53, 0.35);
+    }
+    .pp-lead { margin-bottom: 40px; }
+    h2 {
+      font-family: 'Noto Serif JP', serif;
+      font-weight: 600;
+      font-size: 1.15rem;
+      color: var(--gold-light);
+      letter-spacing: 0.06em;
+      margin: 44px 0 14px;
+      padding-left: 14px;
+      border-left: 3px solid var(--gold);
+      scroll-margin-top: 20px;
+    }
+    h3 {
+      font-family: 'Noto Serif JP', serif;
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--white);
+      letter-spacing: 0.04em;
+      margin: 28px 0 10px;
+    }
+    p { margin-bottom: 14px; }
+    ul { margin: 0 0 14px 1.4em; }
+    li { margin-bottom: 6px; }
+    .pp-info {
+      background: var(--navy-mid);
+      border: 1px solid rgba(200, 162, 53, 0.25);
+      border-radius: 8px;
+      padding: 24px 28px;
+      margin: 20px 0;
+      font-size: 0.95rem;
+    }
+    .pp-info dt { color: var(--gold-light); font-weight: 500; margin-top: 10px; }
+    .pp-info dt:first-child { margin-top: 0; }
+    .pp-info dd { margin-left: 0; }
+    /* 目次 */
+    .pp-toc {
+      background: var(--navy-mid);
+      border: 1px solid rgba(200, 162, 53, 0.25);
+      border-radius: 8px;
+      padding: 24px 28px;
+      margin-bottom: 44px;
+      font-size: 0.92rem;
+    }
+    .pp-toc h2 {
+      font-size: 0.95rem;
+      margin: 0 0 12px;
+      padding: 0;
+      border: none;
+      color: var(--gold-light);
+      letter-spacing: 0.1em;
+    }
+    .pp-toc ol { margin: 0 0 0 1.4em; }
+    .pp-toc li { margin-bottom: 4px; }
+    .pp-toc a { color: var(--gray-light); text-decoration: none; }
+    .pp-toc a:hover { color: var(--gold-light); text-decoration: underline; }
+    /* 注記 */
+    .pp-note {
+      border-left: 3px solid var(--gold-dim);
+      padding: 4px 0 4px 16px;
+      margin: 16px 0;
+      color: var(--gray);
+      font-size: 0.9rem;
+    }
+    .pp-strong { color: var(--gold-light); font-weight: 500; }
+    .pp-back {
+      display: inline-block;
+      margin-top: 56px;
+      padding: 12px 32px;
+      border: 1px solid var(--gold);
+      border-radius: 4px;
+      color: var(--gold-light);
+      text-decoration: none;
+      letter-spacing: 0.1em;
+      font-size: 0.9rem;
+      transition: background 0.3s, color 0.3s;
+    }
+    .pp-back:hover { background: var(--gold); color: var(--dark); }
+    .pp-footer {
+      background: var(--dark);
+      text-align: center;
+      padding: 28px 16px;
+      color: var(--gray);
+      font-size: 0.78rem;
+      letter-spacing: 0.05em;
+    }
+    @media (max-width: 600px) {
+      .pp-container { padding: 44px 20px 64px; }
+      h1 { font-size: 1.4rem; }
+      .pp-info, .pp-toc { padding: 20px 18px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="pp-header">
+    <a href="./">FIVE-STAR JAPAN GROUP</a>
+  </header>
+
+  <main class="pp-container">
+    <h1>STARTER プライバシーポリシー</h1>
+    <div class="pp-sub">
+      業務用アプリケーション「STARTER」における個人情報の取扱いについて<br>
+      制定日：2026年8月25日 ／ 最終改定日：2026年8月25日
+    </div>
+
+    <p class="pp-lead">
+      FIVE-STAR JAPAN株式会社（以下「当社」といいます）は、当社が提供する業務用アプリケーション「STARTER」（以下「本アプリ」といいます）において取り扱う個人情報の重要性を認識し、個人情報の保護に関する法律（個人情報保護法）その他の関係法令を遵守するとともに、本ポリシーに基づいて個人情報を適切に取り扱います。
+    </p>
+    <p class="pp-lead">
+      本ポリシーは<span class="pp-strong">本アプリに固有のもの</span>です。当社ウェブサイト全般における個人情報の取扱いについては、別途<a href="privacy.html" style="color:var(--gold-light)">プライバシーポリシー</a>をご確認ください。
+    </p>
+
+    <nav class="pp-toc">
+      <h2>目次</h2>
+      <ol>
+        <li><a href="#s1">事業者情報</a></li>
+        <li><a href="#s2">本アプリについて／アカウントの作成方法</a></li>
+        <li><a href="#s3">取得する情報</a></li>
+        <li><a href="#s4">取得しない情報</a></li>
+        <li><a href="#s5">利用目的</a></li>
+        <li><a href="#s6">第三者提供および委託先</a></li>
+        <li><a href="#s7">保存期間とアカウントの削除</a></li>
+        <li><a href="#s8">ご本人の権利</a></li>
+        <li><a href="#s9">安全管理措置</a></li>
+        <li><a href="#s10">お問い合わせ窓口</a></li>
+        <li><a href="#s11">本ポリシーの変更</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="s1">1. 事業者情報</h2>
+    <dl class="pp-info">
+      <dt>事業者名</dt><dd>FIVE-STAR JAPAN株式会社</dd>
+      <dt>代表者</dt><dd>代表取締役　中瀬 貞範</dd>
+      <dt>所在地</dt><dd>〒607-8426 京都府京都市山科区御陵下御廟野町１６番地</dd>
+    </dl>
+
+    <h2 id="s2">2. 本アプリについて／アカウントの作成方法</h2>
+    <p>
+      本アプリは、当社と提携する事業者およびそのスタッフが業務に使用する<span class="pp-strong">クローズドな業務システム</span>であり、一般の方向けのサービスではありません。ロードサービスおよび害虫駆除に関する案件の割当・進捗管理・作業報告・請求処理を行うために利用されます。
+    </p>
+    <p>
+      アカウントは<span class="pp-strong">当社からの招待を受けた方のみ</span>が作成できます。本アプリ内に、どなたでも自由に登録できるフォームはありません。
+    </p>
+    <p>
+      招待を受けた方には、ご自身でパスワードを設定していただきます。<span class="pp-strong">当社が利用者のパスワードを保持・閲覧することはありません。</span>また、アカウントは当社が業務内容を確認・承認したうえで有効化されます。
+    </p>
+
+    <h2 id="s3">3. 取得する情報</h2>
+    <p>本アプリでは、以下の情報を取得します。</p>
+
+    <h3>(1) アプリ利用者ご本人の情報</h3>
+    <ul>
+      <li>メールアドレス（ログインIDとして使用します）</li>
+      <li>パスワード（認証基盤において暗号化して保管され、当社が平文で保持することはありません）</li>
+      <li>氏名</li>
+      <li>電話番号</li>
+      <li>所属および担当エリア</li>
+      <li>請求書の宛名（御請求書名義）</li>
+      <li>権限区分（管理者／事務／協力業者）</li>
+    </ul>
+
+    <h3>(2) 業務上お預かりするお客様（第三者）の情報</h3>
+    <p>
+      以下は<span class="pp-strong">アプリ利用者ご本人の情報ではなく</span>、当社にロードサービス等をご依頼されたお客様の情報です。利用者は、担当する案件の遂行に必要な範囲でこれらを閲覧・記録します。
+    </p>
+    <ul>
+      <li>お客様の氏名</li>
+      <li>電話番号（2件まで）</li>
+      <li>メールアドレス</li>
+      <li>現場住所</li>
+      <li>ご依頼内容・作業内容・車両情報</li>
+    </ul>
+    <div class="pp-note">
+      これらのお客様の情報は、業務上必要な範囲に限って表示され、担当外の利用者が参照することはできません。
+    </div>
+
+    <h3>(3) 写真・ファイル</h3>
+    <ul>
+      <li>領収書の画像（カメラでの撮影、またはフォトライブラリからの選択）</li>
+      <li>請求書・通知書等のPDF</li>
+    </ul>
+    <p>
+      カメラおよび写真ライブラリへのアクセスは、<span class="pp-strong">領収書を添付する目的のためだけ</span>に使用し、それ以外の目的では利用しません。
+    </p>
+    <p>
+      これらのファイルは<span class="pp-strong">非公開のストレージ</span>に保管し、権限のある利用者に対して発行される期限付きの署名付きURLでのみ閲覧できます。インターネット上に公開されることはありません。
+    </p>
+
+    <h3>(4) 通知のための情報</h3>
+    <ul>
+      <li>プッシュ通知の送信先識別子（デバイストークン／エンドポイントおよび暗号鍵）</li>
+    </ul>
+    <p>
+      新規案件の割当、追加のご連絡、報告期限のお知らせを送信する目的にのみ使用します。
+    </p>
+
+    <h3>(5) 利用記録</h3>
+    <ul>
+      <li>ログイン日時および操作日時</li>
+      <li>いつ、どの利用者が、どのデータを作成・更新したかの記録</li>
+    </ul>
+    <p>不正防止および業務監査のために保持します。</p>
+
+    <h2 id="s4">4. 取得しない情報</h2>
+    <p>本アプリは、以下の情報を<span class="pp-strong">一切取得しません</span>。</p>
+    <ul>
+      <li>位置情報・GPS情報（ブラウザ／WebView側の権限設定においても利用を禁止しています）</li>
+      <li>広告識別子、および行動ターゲティング広告のための情報</li>
+      <li>第三者によるアクセス解析ツールを通じた情報（Google Analytics 等は使用していません）</li>
+      <li>Cookie等による行動追跡（ログインセッションの保持のみに使用します）</li>
+      <li>生体情報、健康に関する情報、信用情報</li>
+    </ul>
+
+    <h2 id="s5">5. 利用目的</h2>
+    <p>取得した情報は、以下の目的の範囲内で利用します。</p>
+    <ul>
+      <li>案件の割当、進捗管理および作業報告の受付</li>
+      <li>協力業者への買取金額およびマージンの計算、ならびに請求書の発行</li>
+      <li>業務連絡およびプッシュ通知の送信</li>
+      <li>不正利用の防止、システムの保守および改善</li>
+      <li>法令に基づく帳簿の保存および税務対応</li>
+    </ul>
+
+    <h2 id="s6">6. 第三者提供および委託先</h2>
+    <p>
+      当社は、取得した情報を<span class="pp-strong">販売しません</span>。また、広告を目的として第三者へ提供することもありません。
+    </p>
+    <p>システムの運用のため、以下の事業者に情報の取扱いを委託しています。</p>
+    <dl class="pp-info">
+      <dt>Supabase Inc.（米国）</dt>
+      <dd>データベース、認証、ファイル保管<br>
+        ※ データの保管場所は<span class="pp-strong">日本国内（東京リージョン）</span>です。</dd>
+      <dt>Cloudflare, Inc.（米国）</dt>
+      <dd>アプリケーションの配信</dd>
+      <dt>Apple Inc. ／ Google LLC</dt>
+      <dd>プッシュ通知の配送</dd>
+    </dl>
+    <p>
+      これらの委託先とは契約を締結し、当社と同等の安全管理措置を講じることを求めています。
+    </p>
+    <p>
+      法令に基づく開示請求があった場合を除き、上記以外の第三者へ情報を提供することはありません。
+    </p>
+
+    <h2 id="s7">7. 保存期間とアカウントの削除</h2>
+
+    <h3>保存期間</h3>
+    <ul>
+      <li><span class="pp-strong">アカウント情報（ログイン情報・プロフィール）</span><br>
+        退会またはアカウント削除のお申し出により削除します。</li>
+      <li><span class="pp-strong">請求および取引に関する記録</span><br>
+        法令（法人税法・消費税法等）により<span class="pp-strong">7年間の保存義務</span>があるため、アカウントを削除された後も、保存期間が満了するまで保持します。</li>
+      <li><span class="pp-strong">領収書画像・案件データ</span><br>
+        業務上必要な期間、および上記の法定保存期間に従って保持します。</li>
+    </ul>
+    <div class="pp-note">
+      アカウント削除後に残る記録の保持は、<span class="pp-strong">法令上の義務を果たすためのもの</span>であり、業務目的での利用は行いません。
+    </div>
+
+    <h3>アカウントの削除方法</h3>
+    <p>アカウントの削除は、以下のいずれかの方法でお申し出いただけます。</p>
+    <ul>
+      <li><span class="pp-strong">本アプリ内の「設定」画面から、ご自身で削除を申請いただけます。</span></li>
+      <li>下記「10. お問い合わせ窓口」に記載の連絡先へご連絡いただく方法によっても承ります。</li>
+    </ul>
+
+    <h2 id="s8">8. ご本人の権利</h2>
+    <ul>
+      <li>保有個人データについて、開示・訂正・追加・削除・利用停止を請求いただけます。</li>
+      <li>ご請求に際してはご本人であることを確認のうえ、法令に従い速やかに対応します。</li>
+      <li>プッシュ通知は、本アプリ内の設定またはご利用端末のOSの設定から、いつでも停止いただけます。</li>
+    </ul>
+
+    <h2 id="s9">9. 安全管理措置</h2>
+    <ul>
+      <li>通信はすべてHTTPSにより暗号化しています。</li>
+      <li>権限に応じたアクセス制御を行い、担当外のデータを参照できない仕組みとしています。</li>
+      <li>ファイルは非公開ストレージに保管し、期限付きURLでのみ閲覧できるようにしています。</li>
+      <li>操作履歴を記録し、不正なアクセスを検知できるようにしています。</li>
+    </ul>
+
+    <h2 id="s10">10. お問い合わせ窓口</h2>
+    <p>
+      本ポリシーに関するご質問、開示等のご請求、アカウント削除のお申し出は、下記までご連絡ください。
+    </p>
+    <!-- 連絡先 ここから（変更時はこのブロックのみ編集してください） -->
+    <dl class="pp-info">
+      <dt>電話</dt><dd>090-5068-0298（年中無休・24時間）</dd>
+      <dt>メール</dt><dd>five-starjapan_jimu@ymail.ne.jp</dd>
+    </dl>
+    <!-- 連絡先 ここまで -->
+
+    <h2 id="s11">11. 本ポリシーの変更</h2>
+    <p>
+      当社は、法令の改正や本アプリの機能の変更に応じて、本ポリシーを変更することがあります。変更を行った場合は、本ページにおいて告知するとともに、最終改定日を更新します。重要な変更を行う場合は、本アプリ内でもお知らせします。
+    </p>
+
+    <a class="pp-back" href="./">トップページへ戻る</a>
+  </main>
+
+  <footer class="pp-footer">
+    © 2026 FIVE-STAR JAPAN GROUP. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
