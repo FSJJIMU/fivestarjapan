@@ -177,7 +177,7 @@ FIVE-STAR JAPAN株式会社
     { label: '会社名',         value: 'FIVE-STAR JAPAN株式会社' },
     { label: '代表取締役社長', value: '中瀬 貞範' },
     { label: '設立',           value: '2022年' },
-    { label: '所在地',         value: '〒607-8426 京都府京都市山科区御陵下御廟野町１６番地 (蜂駆除の教習所!!)' },
+    { label: '所在地',         value: '〒607-8426 京都府京都市山科区御陵下御廟野町１６番地' },
     { label: '事業内容',       value: 'ロードサービス / 蜂駆除 / 鍵の開錠および修理交換' },
     { label: 'TEL',            value: '090-5068-0298' },
     { label: 'Email',          value: 'five-starjapan_jimu@ymail.ne.jp' },
@@ -230,7 +230,7 @@ FIVE-STAR JAPAN株式会社
   footer: {
     copy: '© 2026 FIVE-STAR JAPAN GROUP. All Rights Reserved.',
     links: [
-      { label: 'プライバシーポリシー', href: '#' },
+      { label: 'プライバシーポリシー', href: 'privacy.html' },
     ],
   },
 };

@@ -5,6 +5,36 @@ Mac / Windows どちらで作業しても、ここを見れば続きから入れ
 
 ---
 
+## 2026-08-25（Windows）
+
+### やったこと
+- **カスタムドメイン適用完了 — https://fivestarjapan.com/ が正式URLに**
+  - 前提調査: サイトは以前からGitHub Pagesで公開済みだった（fsjjimu.github.io/fivestarjapan）。
+    Netlifyは未使用・未ログインと確認 → Netlify案は廃止し「GitHub Pages + Formspree」路線に決定
+  - fivestarjapan.com はGoogle Workspace契約時にSquarespaceへ登録されていた（2026-01-31）。
+    apex/www はSquarespace駐車ページ、starter.fivestarjapan.com はSTARTER本番（Cloudflare Pages）
+  - Squarespace DNS: 既定値ブロック（apex A×4 + www CNAME + HTTPSレコード）を削除し、
+    A×4 = 185.199.108〜111.153（GitHub Pages）と www CNAME = fsjjimu.github.io を追加。
+    MX / SPF / DKIM / starter / _domainconnect は不可侵で維持（メールとSTARTERを守るため）
+  - GitHub Pages: Custom domain = fivestarjapan.com（DNS check successful）→ 証明書発行後 Enforce HTTPS ON
+  - 検証: apex 200 / http→https 301 / www 200 / 旧URL→新URL 301 / starter 200 すべて確認
+- プライバシーポリシーページ `privacy.html` を新規作成。フッターとフォーム注記の `href="#"` を差し替え
+  - HP用途に加え、STARTERアプリストア申請（Apple法人登録・両ストア審査）の必須要件を兼ねる
+- 文言修正: 「通話料無料」を削除（番号が携帯090のため）、会社概要住所の「(蜂駆除の教習所!!)」を削除
+- キャッシュバスター: contents.js v=27→28
+
+### 次にやること
+- [ ] 問い合わせフォームのFormspree化（現状Netlify Forms前提のためGitHub Pages上では送信エラーになり届かない。Formspree無料登録はMSR本人が実施）
+- [ ] `company.qrImg` の本番QRコード差し替え（仮QRコード2.png のまま・保留中）
+- [ ] 重複リポジトリ `five-star-japan`（ハイフンあり）の整理（Pages無効化 or アーカイブ）
+
+### 判断メモ
+- Netlify移行は取りやめ。GitHub Pagesで公開済み・ドメイン適用済みのため、フォームだけFormspreeに差し替える方が変更が小さい
+- DNS編集はSquarespaceのドメイン管理画面（fsj@fivestarjapan.com のGoogleログイン）。変更のたびにGoogle再認証ポップアップが出る仕様
+- HP公開によりAppleの法人登録要件「組織ドメインの機能する公開Webサイト」（FSJ関連/CLAUDE.mdの🔴項目）が解消。同ファイルも✅に更新済み
+
+---
+
 ## 2026-08-24（macOS）
 
 ### やったこと
