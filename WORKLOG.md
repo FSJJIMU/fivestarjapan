@@ -22,9 +22,17 @@ Mac / Windows どちらで作業しても、ここを見れば続きから入れ
   - HP用途に加え、STARTERアプリストア申請（Apple法人登録・両ストア審査）の必須要件を兼ねる
 - 文言修正: 「通話料無料」を削除（番号が携帯090のため）、会社概要住所の「(蜂駆除の教習所!!)」を削除
 - キャッシュバスター: contents.js v=27→28
+- **問い合わせフォームをSSGform化（Netlify Forms廃止）** — 本番でテスト送信成功
+  - サービス比較の結果、国産のSSGform（無料100件/月・広告なし・送信内容をDB保存しない）を採用
+  - アカウント: jimu@fivestarjapan.com / フォーム名「HPお問い合わせ（fivestarjapan.com）」
+  - 送信先URL: `https://ssgform.com/s/hwV81gy1yqF7`
+  - 通知先: jimu@fivestarjapan.com と five-starjapan_jimu@ymail.ne.jp の2件 / 件名「【HP】お問い合わせフォーム受信」
+  - 許可ホスト制限: fivestarjapan.com / www.fivestarjapan.com のみ（スパム対策・localhostからのテスト送信は弾かれるので注意）
+  - 送信後転送先: `thanks.html`（新規作成・サイト同デザインの完了ページ）
+  - フォームのname属性を日本語化（通知メールが読みやすい）・main.jsは二重送信防止のみに簡素化・v=19→20
 
 ### 次にやること
-- [ ] 問い合わせフォームのFormspree化（現状Netlify Forms前提のためGitHub Pages上では送信エラーになり届かない。Formspree無料登録はMSR本人が実施）
+- [ ] 通知メール（【HP】お問い合わせフォーム受信）がjimu@に届いたことの最終確認（テスト送信済み・MSR確認待ち）
 - [ ] `company.qrImg` の本番QRコード差し替え（仮QRコード2.png のまま・保留中）
 - [ ] 重複リポジトリ `five-star-japan`（ハイフンあり）の整理（Pages無効化 or アーカイブ）
 
