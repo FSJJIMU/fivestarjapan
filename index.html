@@ -240,23 +240,18 @@
 
       <div class="contact-divider reveal">または WEBフォームから</div>
 
-      <!-- Form -->
+      <!-- Form (SSGform: 通常POST→送信後はthanks.htmlへ転送される) -->
       <form
         id="contact-form"
         name="contact"
         method="POST"
-        data-netlify="true"
-        netlify-honeypot="bot-field"
+        action="https://ssgform.com/s/hwV81gy1yqF7"
       >
-        <!-- Netlify bot対策 -->
-        <input type="hidden" name="form-name" value="contact">
-        <p style="display:none;"><label>Don't fill: <input name="bot-field"></label></p>
-
         <div class="form-group reveal">
           <label class="form-label" for="name">
             お名前 <span class="required">必須</span>
           </label>
-          <input class="form-input" id="name" name="name" type="text"
+          <input class="form-input" id="name" name="お名前" type="text"
             placeholder="例：田中 太郎" required>
         </div>
 
@@ -264,13 +259,13 @@
           <label class="form-label" for="tel">
             電話番号 <span class="required">必須</span>
           </label>
-          <input class="form-input" id="tel" name="tel" type="tel"
+          <input class="form-input" id="tel" name="電話番号" type="tel"
             placeholder="例：090-0000-0000" required>
         </div>
 
         <div class="form-group reveal reveal-delay-2">
           <label class="form-label" for="email">メールアドレス</label>
-          <input class="form-input" id="email" name="email" type="email"
+          <input class="form-input" id="email" name="メールアドレス" type="email"
             placeholder="例：example@email.com">
         </div>
 
@@ -278,17 +273,17 @@
           <label class="form-label" for="service">
             お問い合わせ種別 <span class="required">必須</span>
           </label>
-          <select class="form-select" id="service" name="service" required>
+          <select class="form-select" id="service" name="お問い合わせ種別" required>
             <option value="" disabled selected>選択してください</option>
-            <option value="road">ロードサービス（出張・バッテリー・牽引など）</option>
-            <option value="bee">蜂駆除</option>
-            <option value="other">その他・お見積り</option>
+            <option value="ロードサービス">ロードサービス（出張・バッテリー・牽引など）</option>
+            <option value="蜂駆除">蜂駆除</option>
+            <option value="その他・お見積り">その他・お見積り</option>
           </select>
         </div>
 
         <div class="form-group reveal">
           <label class="form-label" for="message">お問い合わせ内容</label>
-          <textarea class="form-textarea" id="message" name="message"
+          <textarea class="form-textarea" id="message" name="お問い合わせ内容"
             placeholder="トラブルの状況・ご要望などをご記入ください"></textarea>
         </div>
 
@@ -301,12 +296,6 @@
           個人情報の取り扱いについては<a href="privacy.html" style="color:var(--gold-dim)">プライバシーポリシー</a>をご確認ください。
         </p>
       </form>
-
-      <!-- 送信完了メッセージ -->
-      <div id="form-success" class="form-success">
-        <h3>✅ 送信が完了しました</h3>
-        <p>お問い合わせありがとうございます。<br>内容を確認のうえ、担当者よりご連絡いたします。<br>しばらくお待ちください。</p>
-      </div>
 
     </div>
   </section>
@@ -326,7 +315,7 @@
   <script src="https://unpkg.com/lucide@latest"></script>
 
   <!-- Main JS -->
-  <script src="js/main.js?v=19"></script>
+  <script src="js/main.js?v=20"></script>
 
 </body>
 </html>

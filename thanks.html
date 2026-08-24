@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="お問い合わせ送信完了 | FIVE-STAR JAPAN GROUP">
+  <title>送信完了 | FIVE-STAR JAPAN GROUP</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --dark:       #08101e;
+      --navy:       #0e1d31;
+      --navy-mid:   #1a3050;
+      --gold:       #c8a235;
+      --gold-light: #e8cf82;
+      --gold-dim:   #8a6e22;
+      --white:      #f5f3ee;
+      --gray:       #9aacbe;
+      --gray-light: #d8e2ed;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--navy);
+      color: var(--gray-light);
+      font-family: 'Noto Sans JP', sans-serif;
+      font-weight: 300;
+      line-height: 1.9;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+    }
+    .tk-header {
+      background: var(--dark);
+      padding: 22px 24px;
+      border-bottom: 1px solid rgba(200, 162, 53, 0.25);
+    }
+    .tk-header a {
+      font-family: 'Cinzel', serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+      letter-spacing: 0.12em;
+      color: var(--gold);
+      text-decoration: none;
+    }
+    .tk-main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 64px 24px;
+    }
+    .tk-card {
+      max-width: 640px;
+      width: 100%;
+      background: var(--navy-mid);
+      border: 1px solid rgba(200, 162, 53, 0.3);
+      border-radius: 10px;
+      padding: 56px 40px;
+      text-align: center;
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.28);
+    }
+    .tk-mark {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 24px;
+      border: 2px solid var(--gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-light);
+      font-size: 1.8rem;
+    }
+    h1 {
+      font-family: 'Noto Serif JP', serif;
+      font-weight: 600;
+      font-size: 1.5rem;
+      color: var(--white);
+      letter-spacing: 0.08em;
+      margin-bottom: 18px;
+    }
+    .tk-card p { margin-bottom: 12px; }
+    .tk-tel {
+      margin-top: 26px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(200, 162, 53, 0.25);
+      font-size: 0.92rem;
+      color: var(--gray);
+    }
+    .tk-tel a {
+      color: var(--gold-light);
+      font-weight: 500;
+      text-decoration: none;
+      font-size: 1.15rem;
+      letter-spacing: 0.05em;
+    }
+    .tk-back {
+      display: inline-block;
+      margin-top: 32px;
+      padding: 12px 36px;
+      border: 1px solid var(--gold);
+      border-radius: 4px;
+      color: var(--gold-light);
+      text-decoration: none;
+      letter-spacing: 0.1em;
+      font-size: 0.9rem;
+      transition: background 0.3s, color 0.3s;
+    }
+    .tk-back:hover { background: var(--gold); color: var(--dark); }
+    .tk-footer {
+      background: var(--dark);
+      text-align: center;
+      padding: 24px 16px;
+      color: var(--gray);
+      font-size: 0.78rem;
+      letter-spacing: 0.05em;
+    }
+    @media (max-width: 600px) {
+      .tk-card { padding: 44px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="tk-header">
+    <a href="./">FIVE-STAR JAPAN GROUP</a>
+  </header>
+
+  <main class="tk-main">
+    <div class="tk-card">
+      <div class="tk-mark">✓</div>
+      <h1>送信が完了しました</h1>
+      <p>お問い合わせありがとうございます。<br>
+      内容を確認のうえ、担当者よりご連絡いたします。<br>
+      しばらくお待ちください。</p>
+      <div class="tk-tel">
+        お急ぎの場合はお電話が確実です<br>
+        <a href="tel:09050680298">090-5068-0298</a><br>
+        24時間・365日受付
+      </div>
+      <a class="tk-back" href="./">トップページへ戻る</a>
+    </div>
+  </main>
+
+  <footer class="tk-footer">
+    © 2026 FIVE-STAR JAPAN GROUP. All Rights Reserved.
+  </footer>
+
+</body>
+</html>

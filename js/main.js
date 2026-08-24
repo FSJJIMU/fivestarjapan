@@ -366,30 +366,19 @@ function initScrollReveal() {
 
 
 /* ──────────────────────────────────────────────────────
-   Contact Form (Netlify Forms対応)
+   Contact Form (SSGform)
+   通常POSTで送信し、完了後はSSGform側の設定で thanks.html へ転送される
 ────────────────────────────────────────────────────── */
 function initForm() {
   const form = document.getElementById('contact-form');
   if (!form) return;
 
-  // Netlify Forms: data-netlify="true" を付けておけばそのまま動く
-  // ローカルテスト中はsubmitしてもページ遷移しないように制御
-  form.addEventListener('submit', async (e) => {
-    const isNetlify = form.getAttribute('data-netlify') === 'true';
-    if (!isNetlify) {
-      // ローカル確認用：送信シミュレーション
-      e.preventDefault();
-      showSuccess();
-      return;
+  // 二重送信防止のみ（送信自体はブラウザのデフォルトPOSTに任せる）
+  form.addEventListener('submit', () => {
+    const btn = form.querySelector('.form-submit');
+    if (btn) {
+      btn.disabled = true;
+      btn.textContent = '送信中...';
     }
-    // Netlify本番：デフォルト送信に任せる（e.preventDefault()しない）
   });
-}
-
-function showSuccess() {
-  const form    = document.getElementById('contact-form');
-  const success = document.getElementById('form-success');
-  form.style.display    = 'none';
-  success.style.display = 'block';
-  success.scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
