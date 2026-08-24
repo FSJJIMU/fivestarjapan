@@ -21,7 +21,7 @@ const SITE_CONTENTS = {
     address: '〒607-8426 京都府京都市山科区御陵下御廟野町１６番地',
     logoImg: 'images/FSJ-logo2-透過.png',             // ← ロゴ画像
     heroBg:  'images/背景画像.jpg',                   // ← ヒーロー背景画像
-    qrImg:   'images/仮QRコード2.png',                // ← QRコード画像（仮）
+    qrImg:   'images/qr-fivestarjapan.png',          // ← QRコード（https://fivestarjapan.com/ に飛ぶ・本番）
   },
 
   // ── ナビゲーション ────────────────────────────────

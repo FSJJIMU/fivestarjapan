@@ -31,10 +31,15 @@ Mac / Windows どちらで作業しても、ここを見れば続きから入れ
   - 送信後転送先: `thanks.html`（新規作成・サイト同デザインの完了ページ）
   - フォームのname属性を日本語化（通知メールが読みやすい）・main.jsは二重送信防止のみに簡素化・v=19→20
 
+- 通知メール（【HP】お問い合わせフォーム受信）のjimu@着信をMSRが確認 → **フォーム全経路の動作確認完了**
+- **本番QRコード差し替え完了** — 仮QR（旧STUDIOプレビューURL: preview.studio.site/live/EjOQoyKdaJ）を解読し、
+  役割が「PC閲覧者がスマホでサイトを開くQR」と判明。`images/qr-fivestarjapan.png` を生成
+  （https://fivestarjapan.com/ 行き・デコード検証済み）して差し替え。contents.js v=28→29。
+  旧 仮QRコード2.png はファイルとしては残置（参照なし）
+
 ### 次にやること
-- [ ] 通知メール（【HP】お問い合わせフォーム受信）がjimu@に届いたことの最終確認（テスト送信済み・MSR確認待ち）
-- [ ] `company.qrImg` の本番QRコード差し替え（仮QRコード2.png のまま・保留中）
 - [ ] 重複リポジトリ `five-star-japan`（ハイフンあり）の整理（Pages無効化 or アーカイブ）
+- [ ] D-U-N-S番号申請への着手（STARTERストア配信Phase 0。HP公開でApple法人登録の公開サイト要件はクリア済み）
 
 ### 判断メモ
 - Netlify移行は取りやめ。GitHub Pagesで公開済み・ドメイン適用済みのため、フォームだけFormspreeに差し替える方が変更が小さい
