@@ -1,2 +1,5 @@
 .DS_Store
-.claude/
+
+# OS/マシン固有の設定のみ除外（.claude/commands/ は共有する）
+.claude/settings.local.json
+.claude/launch.json

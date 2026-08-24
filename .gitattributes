@@ -1,0 +1,13 @@
+# 改行コードを LF に統一（Windows と macOS の往復で差分が出ないようにする）
+* text=auto eol=lf
+
+# バイナリは変換しない
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.webp binary
+*.psd  binary
+*.docx binary
+*.pdf  binary
+*.ico  binary
