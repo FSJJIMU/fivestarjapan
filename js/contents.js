@@ -189,7 +189,7 @@ FIVE-STAR JAPAN株式会社
       region: '関西一円',
       area: '京都・滋賀・大阪・奈良・兵庫',
       services: ['car', 'bee'],
-      companies: ['FIVE-STAR JAPAN（株）', '合同会社 eight', 'verde', '梅工業', '誉オート', '株式会社 ライト'],
+      companies: ['FIVE-STAR JAPAN（株）', '合同会社 eight', '梅工業', 'verde', '誉オート', '株式会社 ライト'],
     },
     {
       region: '東海一円',
@@ -201,7 +201,7 @@ FIVE-STAR JAPAN株式会社
       region: '四国',
       area: '高知・愛媛・徳島・香川',
       services: ['bee'],
-      companies: ['エイチアイアイピー'],
+      companies: ['エイチアイピー'],
     },
     {
       region: '九州',
