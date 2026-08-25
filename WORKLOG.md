@@ -58,6 +58,21 @@ Mac / Windows どちらで作業しても、ここを見れば続きから入れ
   - ⚠ **App Store Connect の「使用許諾契約(EULA)」欄は標準EULAのまま**にする方針（独自EULAはApple指定の10項目必須のため）。
     本ページは「サービス規約」として運用する
 
+- **協力店リスト更新**（関西: verde・梅工業 追加／共和テック削除、東海: 9社に刷新、四国: 香川追加・エイチアイアイピー、九州: 5県に拡大・誉オート/LIGHT MOTOR WORKS）
+- **退会した協力店のロゴをロゴまとめ画像から削除**（「粋」印）。画像を再構成し、PC版は上段5→4、SP版は最下段3→2に中央寄せ。他ロゴは元サイズ・元位置のまま
+- **★HP全体の軽量化（体感速度の改善）**
+  - 参照画像 **12.05MB → 6.61MB（45%削減）**、初期ロードは **691KB**
+  - JPEG全点を q82・progressive で再圧縮（等倍比較で劣化が見えないことを確認してから実施）
+  - ロゴシートとヒーローエンブレムを256色PNG化（エンブレムは alpha 保持・464KB→98KB。金のグラデーションの劣化がないことを目視確認）
+  - `hachiblock.png` は透過がなかったのでJPEG化（805KB→161KB）。`contents.js` の参照も更新
+  - **協力店ロゴを `<picture>` 化** — 従来はPC用とSP用の**両方**をダウンロードしていた（1.1MB）。
+    現在は該当する1枚だけ（PC=119KB）。`.partners-combined-pic { display:block }` を追加（reveal の transform を効かせるため）
+  - 画面外の画像に `loading="lazy"`、ヒーローエンブレムに `fetchpriority="high"`（LCP改善）
+  - `css/style.css` が存在しない `images/hero-bg.jpg` を参照して毎回404を出していたのを解消
+    （実画像は main.js が contents.js の heroBg から設定するのでURL指定は不要だった）
+  - キャッシュバスター: style.css v=100 / contents.js v=32 / main.js v=21
+  - ⚠ **画像を再圧縮したので、今後 images/ に画像を追加するときも同じ処理を通すこと**（PIL: JPEG q82 progressive optimize）
+
 ### 次にやること
 - [ ] **STARTER側の実装**: アプリ内「設定」画面にアカウント削除の申請導線を作る
       （starter-privacy.html に「アプリ内から削除申請できる」と明記したため、実装が必要。Apple Guideline 5.1.1(v)）
