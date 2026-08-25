@@ -128,7 +128,7 @@ const SITE_CONTENTS = {
       {
         name: 'ハチブロック',
         desc: '弊社独自開発の蜂ブロック工法。詳細は担当者までお問い合わせください。',
-        img: 'images/hachiblock.png',
+        img: 'images/hachiblock.jpg',
       },
     ],
   },

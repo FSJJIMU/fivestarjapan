@@ -42,7 +42,7 @@ function buildPage() {
   if (c.company.logoImg) {
     const emblem = document.querySelector('.hero-emblem');
     emblem.classList.add('has-image');
-    emblem.innerHTML = `<img src="${c.company.logoImg}" alt="${c.company.name} ロゴ" style="width:100%;height:100%;object-fit:contain;">`;
+    emblem.innerHTML = `<img src="${c.company.logoImg}" alt="${c.company.name} ロゴ" fetchpriority="high" decoding="async" style="width:100%;height:100%;object-fit:contain;">`;
     // CSS キャッシュ回避：pseudo-element を強制非表示
     const st = document.createElement('style');
     st.textContent = '.hero-emblem.has-image{background:none!important;border:none!important;box-shadow:none!important;}' +
@@ -106,15 +106,18 @@ function buildPage() {
   if (c.partnersCombinedLogo) {
     partnersEl.classList.add('has-combined');
     const mobileImg = c.partnersCombinedLogoMobile || c.partnersCombinedLogo;
+    // <picture> にすることで、表示される側の1枚だけがダウンロードされる
     partnersEl.innerHTML =
-      `<img src="${c.partnersCombinedLogo}" alt="協力店ロゴ一覧" class="partners-combined-img reveal partners-logo-desktop">` +
-      `<img src="${mobileImg}"              alt="協力店ロゴ一覧" class="partners-combined-img reveal partners-logo-mobile">`;
+      `<picture class="partners-combined-pic reveal">` +
+        `<source media="(max-width: 900px)" srcset="${mobileImg}">` +
+        `<img src="${c.partnersCombinedLogo}" alt="協力店ロゴ一覧" class="partners-combined-img" loading="lazy" decoding="async">` +
+      `</picture>`;
   } else {
     c.partners.forEach(p => {
       partnersEl.innerHTML += `
         <div class="partner-card reveal">
           ${p.logo
-            ? `<img src="${p.logo}" alt="${p.name}">`
+            ? `<img src="${p.logo}" alt="${p.name}" loading="lazy" decoding="async">`
             : `<span class="partner-name">${p.name}</span>`}
         </div>`;
     });
@@ -247,7 +250,7 @@ function buildBeeOrganic(containerId, data) {
   const tools = data.tools.map(t => `
     <div class="bee-organic-tool-card reveal">
       ${t.img
-        ? `<img src="${t.img}" alt="${t.name}" class="bee-organic-tool-img">`
+        ? `<img src="${t.img}" alt="${t.name}" class="bee-organic-tool-img" loading="lazy" decoding="async">`
         : `<div class="bee-organic-tool-img-placeholder">IMAGE</div>`}
       <div class="bee-organic-tool-body">
         <div class="bee-organic-tool-name">${t.name}</div>

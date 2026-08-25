@@ -174,7 +174,10 @@ a { color: inherit; text-decoration: none; }
 .hero-bg-img {
   position: absolute;
   inset: 0;
-  background: url('../images/hero-bg.jpg') center/cover no-repeat;
+  /* 実画像は main.js が contents.js の heroBg から設定する（存在しないファイルへの404を防ぐためURLは書かない） */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   opacity: 0.4;
   z-index: 0;
 }
@@ -1599,6 +1602,10 @@ br.sp-br { display: none; }
   overflow: hidden;
   box-shadow: 0 2px 16px rgba(0,0,0,0.08);
   border: 1px solid rgba(0,0,0,0.07);
+}
+
+.partners-combined-pic {
+  display: block;
 }
 
 .partners-combined-img {
