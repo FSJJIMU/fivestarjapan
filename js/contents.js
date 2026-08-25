@@ -213,8 +213,8 @@ FIVE-STAR JAPAN株式会社
 
   // ── パートナーロゴ ────────────────────────────────
   // combinedLogo を設定すると一枚画像をまとめて表示（Mobile は別画像）
-  partnersCombinedLogo:       'images/ロゴまとめ1.png',
-  partnersCombinedLogoMobile: 'images/ロゴまとめ2.png',
+  partnersCombinedLogo:       'images/ロゴまとめ1.png?v=2',
+  partnersCombinedLogoMobile: 'images/ロゴまとめ2.png?v=2',
   partners: [
     { name: 'パートナー企業1', logo: 'images/ロゴ/output/170504_car-emblem-01.jpg' },
     { name: 'パートナー企業2', logo: 'images/ロゴ/output/170504_car-emblem-02.jpg' },
